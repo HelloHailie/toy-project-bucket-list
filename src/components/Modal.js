@@ -69,6 +69,7 @@ const Modal = ({ openToggleHandler, data, setData }) => {
       .then((response) => response.json())
       .then((data) => setData(data));
 
+    window.location.reload();
     openToggleHandler(false);
   };
 

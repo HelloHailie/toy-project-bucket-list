@@ -61,6 +61,8 @@ const BucketListInput = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(bucketlist),
     });
+
+    window.location.reload();
   };
 
   return (
